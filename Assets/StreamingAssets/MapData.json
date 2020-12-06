@@ -1,0 +1,208 @@
+{
+    "provinsiData": [
+        {
+            "nama": "Nanggroe Aceh Darussalam",
+            "ibuKota": "Banda Aceh",
+            "sumberDayaHayati": "Pala: Aceh Selatan.\nKelapa: Aceh Besar, Pidie, Pidie Jaya, Bireuen, Aceh Utara, dan Aceh Timur. Kemudian, Aceh Jaya, Aceh Barat, Abdya, Aceh Selatan, Singkil, dan Simenlu.\nPinang, sawit, karet, kakao, dan kopi.",
+            "sumberDayaNonHayati": "Tambang emas: di Aceh Besar, Aceh Tengah, Pidie, dan Aceh Barat.\nTambang biji besi: di Aceh Besar, Aceh Selatan, dan Aceh Barat.\nTambang mangan: di Kabupaten Aceh Barat dan Aceh Tenggara.\nTambang biji timah, batu bara, dan minyak bumi: di Aceh Timur dan Aceh Barat, yakni di daerah Rantau Kuala dan Sim-pang Peureulak.\nTambang gas alam:\ndi daerah Lhok Sukon dan Kabupaten Aceh Utara."
+        },
+        {
+            "nama": "Sumatera Utara",
+            "ibuKota": "Medan",
+            "sumberDayaHayati": "Kelapa sawit, karet.\nKabupaten Dairi, Simalungun dan Humbanghasundutan: Kopi.\nRempah pala biji, bunga pala, kelapa serabut, minyak sawit, kelapa.",
+            "sumberDayaNonHayati": "Migas batu gamping, dolomit, pasir kuarsa, belerang, kaolin, diatomea, bentonit, gas alam, pasir, dan batu.\nSementara barang tambang: Emas, perak, tembaga dan timah hitam."
+        },
+        {
+            "nama": "Sumatera Barat",
+            "ibuKota": "Padang",
+            "sumberDayaHayati": "Kelapa sawit, kakao, gambir, dan hasil perikanan, karet, cengkih, dan lada.",
+            "sumberDayaNonHayati": "Batubara, batu besi, batu galena, timah hitam, seng, mangan ,emas, batu kapur (semen)."
+        },
+        {
+            "nama": "Riau",
+            "ibuKota": "Pekan Baru",
+            "sumberDayaHayati": "Padi, jagung dan kedelai, kacang tanah, kacang hijau, ubi kayu ,dan ubi jalar.",
+            "sumberDayaNonHayati": "Minyak bumi, gas alam."
+        },
+        {
+            "nama": "Kepulauan Riau",
+            "ibuKota": "Tanjung Pinang",
+            "sumberDayaHayati": "Ikan dan rumput laut.",
+            "sumberDayaNonHayati": "Batu granit: Karimun, Bintan, Lingga dan Kepulauan Anambas.\nPasir: Karimun, Bintan, dan Lingga\nTimah: Karimun dan Lingga.\nBauksit:nKarimun, Bintan, dan Lingga.\nBiji Besi: Lingga dan Kepulauan Anambas."
+        },
+        {
+            "nama": "Jambi",
+            "ibuKota": "Jambi",
+            "sumberDayaHayati": "Karet, sawit, padi, teh, dan palawija.",
+            "sumberDayaNonHayati": "Batu bara."
+        },
+        {
+            "nama": "Bengkulu",
+            "ibuKota": "Bengkulu",
+            "sumberDayaHayati": "Sawit, karet, kopi, kelapa, lada, cengkeh, aren, kayu manis, pinang, kemiri.",
+            "sumberDayaNonHayati": "Batu bara, emas, pasir besi, batu apung, bentonit."
+        },
+        {
+            "nama": "Sumatera Selatan",
+            "ibuKota": "Palembang",
+            "sumberDayaHayati": "Padi, jagung, kedelai, karet, kelapa sawit, teh, tebu, kopi, ikan air tawar dan laut.",
+            "sumberDayaNonHayati": "Batu bara, gas alam, minyak bumi, coaled methane, panas bumi."
+        },
+        {
+            "nama": "Kepulauan Bangka Belitung",
+            "ibuKota": "Pangkal Pinang",
+            "sumberDayaHayati": "Kayu, lada, karet, kelapa sawit, cengkeh, dan coklat.",
+            "sumberDayaNonHayati": "Timah, kaolin, granit, dan pasir laut, pasir kuarsa."
+        },
+        {
+            "nama": "Lampung",
+            "ibuKota": "Bandar Lampung",
+            "sumberDayaHayati": "Palawija, kedelai, karet, tebu, kakao, kopi.",
+            "sumberDayaNonHayati": "Mineral keramik: Kabupaten Mesuji, Kabupaten Tulang Bawang dan Tulang Bawang Barat, Kabupaten Lampung Timur, Kambupaten Lampung Tengah, Kabupaten Lampung Utara, Kabupaten Waykanan.\nPanas Bumi: Kabupaten Waykanan, Kabupaten Lampung Barat, Kabupaten Tanggamus, Kabupaten Pesisir Barat, Kabupaten Lampung Selatan.\nLogam Besi: Kabupaten Lampung Selatan.\nLogam Mulia: Kabupaten Waykanan, Kabupaten Lampung Utara, Kabupaten Lampung Barat, Kabupaten Tanggamus.\nBatu bara: Tanggamus."
+        },
+        {
+            "nama": "Banten",
+            "ibuKota": "Serang",
+            "sumberDayaHayati": "Banten: Karet, kelapa, lada, cengkeh, panili, melinjo.",
+            "sumberDayaNonHayati": "Emas: Cikotok\nBijih besi: Cikurut.\nBahan semen: Anyer.\nBelerang: Walantakan dan Padarincang.\nBahan mika: Bojon.\nIntan: Madur."
+        },
+        {
+            "nama": "Jawa Barat",
+            "ibuKota": "Bandung",
+            "sumberDayaHayati": "Teh, cengkeh, kelapa, karet, kakao, tembakau, kopi, tebu, dan akar wangi.",
+            "sumberDayaNonHayati": "Cilegon: Bijih besi.\nTasikmalaya: Mangaan.\nPangandaran: Fosfat.\nG. Patuha: Belerang.\nMajalengka: Minyak bumi."
+        },
+        {
+            "nama": "DKI Jakarta",
+            "ibuKota": "Jakarta",
+            "sumberDayaHayati": "Ikan konsumsi dan Ikan hias.",
+            "sumberDayaNonHayati": "Migas: Pulau Pabelokan, Kepulauan Seribu."
+        },
+        {
+            "nama": "Jawa Tengah",
+            "ibuKota": "Semarang",
+            "sumberDayaHayati": "Kelapa, tebu, cengkeh, tembakau, kapok, kopi, dan jambu mete, kayu hutan.",
+            "sumberDayaNonHayati": "Kliripan: Mangaan.\nJepara: Kapur, tembaga."
+        },
+        {
+            "nama": "DI Yogyakarta",
+            "ibuKota": "Yogyakarta",
+            "sumberDayaHayati": "Padi, jagung, ketela pohon, ketela rambat, kacang tanah, kacang kedelai serta kacang hijau, kayu, tebu.",
+            "sumberDayaNonHayati": "Yogyakarta: Marmer, granit."
+        },
+        {
+            "nama": "Jawa Timur",
+            "ibuKota": "Surabaya",
+            "sumberDayaHayati": "Biji kopi, kopi, kakao, padi, tebu, kelapa, coklat.",
+            "sumberDayaNonHayati": "G. Welirang: Belerang, Aspal.\nBojonegoro: Fosfat.\nP. Madura: Garam.\nGresik: Semen\nTulungagung: Bijih Besi, Marmer."
+        },
+        {
+            "nama": "Bali",
+            "ibuKota": "Denpasar",
+            "sumberDayaHayati": "Padi, kelapa sawit, kelapa, nira.",
+            "sumberDayaNonHayati": "Batu alam."
+        },
+        {
+            "nama": "Nusa Tenggara Barat",
+            "ibuKota": "Mataram",
+            "sumberDayaHayati": "Kopi, kacang mede, jagung, tembakau.",
+            "sumberDayaNonHayati": "Emas, perak, tembaga, pasir best, dan timbal, atau timah hitam, belerang."
+        },
+        {
+            "nama": "Nusa Tenggara Timur",
+            "ibuKota": "Kupang",
+            "sumberDayaHayati": "Kopi, kacang mede, jagung, tembakau.",
+            "sumberDayaNonHayati": "Grafit, logam mangan, chrome, nikel, tembaga, dan emas."
+        },
+        {
+            "nama": "Kalimantan Utara",
+            "ibuKota": "Tanjung Selor",
+            "sumberDayaHayati": "Kepala sawit, kakao, kayu, kelapa.",
+            "sumberDayaNonHayati": "Batu bara, minyak, emas, gas alam."
+        },
+        {
+            "nama": "Kalimantan Barat",
+            "ibuKota": "Pontianak",
+            "sumberDayaHayati": "Karet, kelapa sawit, kelapa, kayu.",
+            "sumberDayaNonHayati": "Bauksit, batu bara."
+        },
+        {
+            "nama": "Kalimantan Tengah",
+            "ibuKota": "Palangka Raya",
+            "sumberDayaHayati": "Kelapa sawit, rotan, kayu, karet.",
+            "sumberDayaNonHayati": "Emas, pasit zirkon, batu bara, besi, tembaga, dan intan."
+        },
+        {
+            "nama": "Kalimantan Selatan",
+            "ibuKota": "Banjarmasin",
+            "sumberDayaHayati": "Kelapa sawit, banili, kakao, kelapa, kayu.",
+            "sumberDayaNonHayati": "Gas alam, batu bara, minyak bumi."
+        },
+        {
+            "nama": "Kalimantan Timur",
+            "ibuKota": "Samarinda",
+            "sumberDayaHayati": "Karet, kelapa sawit, kayu.",
+            "sumberDayaNonHayati": "Batu bara, emas, intan, tembaga, besi, minyak."
+        },
+        {
+            "nama": "Gorontalo",
+            "ibuKota": "Gorontalo",
+            "sumberDayaHayati": "Kelapa, kakao, kopi, kayu jati, rotan, damar.",
+            "sumberDayaNonHayati": "Emas, perak, tembaga, batu gamping, toseki, batu granit, sirtu, zeolit, kaolin, pasir kuarsa, feldspar, serta lempung."
+        },
+        {
+            "nama": "Sulawesi Utara",
+            "ibuKota": "Manado",
+            "sumberDayaHayati": "Kelapa, cengkeh, kopi, vanili, kayu manis.",
+            "sumberDayaNonHayati": "Emas, perak, tembaga, nikel, besi, titanium, mangan, semen, kaolin, belerang, pasir besi/hitam, dan bahan galian C seperti pasir, batu kerikil dan trass."
+        },
+        {
+            "nama": "Sulawesi Barat",
+            "ibuKota": "Mamuju",
+            "sumberDayaHayati": "Kakao, kopi, kelapa, cengkeh.",
+            "sumberDayaNonHayati": "Emas, batu bara, minyak bumi."
+        },
+        {
+            "nama": "Sulawesi Tengah",
+            "ibuKota": "Palu",
+            "sumberDayaHayati": "Rotan, kelapa sawit, kelapa, kedelai.",
+            "sumberDayaNonHayati": "Batu bara, minyak, gas bumi, nikel, emas molibdenum, chronit, tembaga, belerang, sirtukil, granit, marmer, pasir kuarsa, pasir besi, lempung."
+        },
+        {
+            "nama": "Sulawesi Selatan",
+            "ibuKota": "Makassar",
+            "sumberDayaHayati": "Kayu eboni, kakao, kopi, cengkeh, kelapa.",
+            "sumberDayaNonHayati": "Emas, mangan, besi, pasir besi, granit, timah hitam, batu nikel."
+        },
+        {
+            "nama": "Sulawesi Tenggara",
+            "ibuKota": "Kendari",
+            "sumberDayaHayati": "Kako, kacang mede, kelapa, cengkeh, kopi, pinang lada, vanili.",
+            "sumberDayaNonHayati": "Aspal, nikel, emas, marmer, permata, onix, dan gamping."
+        },
+        {
+            "nama": "Maluku Utara",
+            "ibuKota": "Sofifi",
+            "sumberDayaHayati": "Padi, jagung, pala, kayu, cengkeh.",
+            "sumberDayaNonHayati": "P. Halmahera: Asbes, mangan, nikel."
+        },
+        {
+            "nama": "Maluku",
+            "ibuKota": "Ambon",
+            "sumberDayaHayati": "Padi, jagung, pala, kayu, cengkeh.",
+            "sumberDayaNonHayati": "Minyak bumi, asbes."
+        },
+        {
+            "nama": "Papua Barat",
+            "ibuKota": "Manokwari",
+            "sumberDayaHayati": "Sagu, kelapa, rotan.",
+            "sumberDayaNonHayati": "Minyak, gas bumi, pasir, nikel, besi."
+        },
+        {
+            "nama": "Papua",
+            "ibuKota": "Jayapura",
+            "sumberDayaHayati": "Sagu, kayu, kopi, kakao.",
+            "sumberDayaNonHayati": "Emas, minyak, gas bumi, nikel, krom, pasir, marmer, batu bara."
+        }
+    ]
+}

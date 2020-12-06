@@ -1,0 +1,172 @@
+{
+  "ACEH": [
+    "ImageResource/JawaTimur.jpg",
+    "Aceh",
+    "Aceh Materi"
+  ],
+  "SUMATERA_UTARA": [
+    "ImageResource/SumateraUtara.jpg",
+    "Sumatera Utara",
+    "Sumatera Utara Materi"
+  ],
+  "SUMATERA_BARAT": [
+    "ImageResource/SumateraBarat.jpg",
+    "Sumatera Barat",
+    "Sumatera Barat Materi"
+  ],
+  "RIAU": [
+    "ImageResource/Riau.jpg",
+    "Riau",
+    "Riau Materi"
+  ],
+  "KEPULAUAN_RIAU": [
+    "ImageResource/KepulauanRiau.jpg",
+    "Kepulauan Riau",
+    "Kepulauan Riau Materi"
+  ],
+  "JAMBI": [
+    "ImageResource/Jambi.jpg",
+    "Jambi",
+    "Jambi Materi"
+  ],
+  "BENGKULU": [
+    "ImageResource/Bengkulu.jpg",
+    "Bengkulu",
+    "Bengkulu Materi"
+  ],
+  "SUMATERA_SELATAN": [
+    "ImageResource/SumateraSelatan.jpg",
+    "Sumatera Selatan",
+    "Sumatera Selatan Materi"
+  ],
+  "BANGKA_BELITUNG": [
+    "ImageResource/BangkaBelitung.jpg",
+    "Kepulauan Bangka Belitung",
+    "Kepulauan Bangka Belitung Materi"
+  ],
+  "LAMPUNG": [
+    "ImageResource/Lampung.jpg",
+    "Lampung",
+    "Lampung Materi"
+  ],
+  "BANTEN": [
+    "ImageResource/Banten.jpg",
+    "Banten",
+    "Banten Materi"
+  ],
+  "JAWA_BARAT": [
+    "ImageResource/JawaBarat.jpg",
+    "Jawa Barat",
+    "Jawa Barat Materi"
+  ],
+  "DKI_JAKARTA": [
+    "ImageResource/DKIJakarta.jpg",
+    "DKI Jakarta",
+    "DKI Jakarta Materi"
+  ],
+  "JAWA_TENGAH": [
+    "ImageResource/JawaTengah.jpg",
+    "Jawa Tengah",
+    "Jawa Tengah Materi"
+  ],
+  "DI_YOGYAKARTA": [
+    "ImageResource/DIYogyakarta.jpg",
+    "DI Yogyakarta",
+    "DI Yogyakarta Materi"
+  ],
+  "JAWA_TIMUR": [
+    "ImageResource/JawaTImur.jpg",
+    "Jawa Timur",
+    "Jawa Timur Materi"
+  ],
+  "BALI": [
+    "ImageResource/Bali.jpg",
+    "Bali",
+    "Bali Materi"
+  ],
+  "NTB": [
+    "ImageResource/NTB.jpg",
+    "Nusa Tenggara Barat",
+    "Nusa Tenggara Barat Materi"
+  ],
+  "NTT": [
+    "ImageResource/NTT.jpg",
+    "Nusa Tenggara TImur",
+    "Nusa Tenggara TImur Materi"
+  ],
+  "KALIMANTAN_UTARA": [
+    "ImageResource/KalimantanUtara.jpg",
+    "Kalimantan Utara",
+    "Kalimantan Utara Materi"
+  ],
+  "KALIMANTAN_BARAT": [
+    "ImageResource/KalimantanBarat.jpg",
+    "Kalimantan Barat",
+    "Kalimantan Barat Materi"
+  ],
+  "KALIMANTAN_TENGAH": [
+    "ImageResource/KalimantanTengah.jpg",
+    "Kalimantan Tengah",
+    "Kalimantan Tengah Materi"
+  ],
+  "KALIMANTAN_SELATAN": [
+    "ImageResource/KalimantanSelatan.jpg",
+    "Kalimantan Selatan",
+    "Kalimantan Selatan Materi"
+  ],
+  "KALIMANTAN_TIMUR": [
+    "ImageResource/KalimantanTimur.jpg",
+    "Kalimantan Timur",
+    "Kalimantan Timur Materi"
+  ],
+  "GORONTALO": [
+    "ImageResource/Gorontalo.jpg",
+    "Gorontalo",
+    "Gorontalo Materi"
+  ],
+  "SULAWESI_UTARA": [
+    "ImageResource/SulawesiUtara.jpg",
+    "Sulawesi Utara",
+    "Sulawesi Utara Materi"
+  ],
+  "SULAWESI_BARAT": [
+    "ImageResource/SulawesiBarat.jpg",
+    "Sulawesi Barat",
+    "Sulawesi Barat Materi"
+  ],
+  "SULAWESI_TENGAH": [
+    "ImageResource/SulawesiTengah.jpg",
+    "Sulawesi Tengah",
+    "Sulawesi Tengah Materi"
+  ],
+  "SULAWESI_SELATAN": [
+    "ImageResource/SulawesiSelatan.jpg",
+    "Sulawesi Selatan",
+    "Sulawesi Selatan Materi"
+  ],
+  "SULAWESI_TENGGARA": [
+    "ImageResource/SulawesiTenggara.jpg",
+    "Sulawesi Tenggara",
+    "Sulawesi Tenggara Materi"
+  ],
+  "MALUKU_UTARA": [
+    "ImageResource/MalukuUtara.jpg",
+    "Maluku Utara",
+    "Maluku Utara Materi"
+  ],
+  "MALUKU": [
+    "ImageResource/Maluku.jpg",
+    "Maluku",
+    "Maluku Materi"
+  ],
+  "PAPUA_BARAT": [
+    "ImageResource/PapuaBarat.jpg",
+    "Papua Barat",
+    "Papua Barat Materi"
+  ],
+  "PAPUA": [
+    "ImageResource/Papua.jpg",
+    "Papua",
+    "Papua Materi"
+  ]
+}
