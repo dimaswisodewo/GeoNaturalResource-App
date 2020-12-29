@@ -9,6 +9,7 @@ public class MapController : MonoBehaviour
     public void OnCloseButtonClicked()
     {
         MapUIController.instance.SetActivePopUpPanel(false);
+        MapUIController.instance.DestroyLargeImage();
     }
 
     public void SetDetailDaerah(DAERAH inputDaerah)

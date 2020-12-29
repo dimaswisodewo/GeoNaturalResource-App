@@ -15,6 +15,9 @@ public class MapUIController : MonoBehaviour
     public GameObject malukuButtonGroup;
     public GameObject papuaButtonGroup;
     [Header("Pop Up Panel")]
+    public GameObject largeImagePanel;
+    public GameObject largeImagePrefab;
+    public Transform largeImageParent;
     public GameObject popUpPanel;
     public Text namaDaerahText;
     public Text SDAHayatiText;
@@ -23,18 +26,43 @@ public class MapUIController : MonoBehaviour
     public Image logoDaerahImage;
     public ScrollRect scrollRect;
     [Header("Library Sprite Daerah")]
-    public List<Sprite> librarySpriteDaerah = new List<Sprite>();
-    [Header("Library Logo Daerah")]
-    public List<Sprite> libraryLogoDaerah = new List<Sprite>();
+    public List<ProvinsiSprite> libraryProvinsiSprite = new List<ProvinsiSprite>();
 
-    public void ResetScrollRectPosition()
-    {
-        scrollRect.normalizedPosition = new Vector2(1f, 1f);
-    }
+    // Deactivate all daerah button
+    public delegate void OnBGClicked ();
+    public static OnBGClicked onBGClicked;
 
     public void SetActivePopUpPanel(bool setActive)
     {
         SetActive(popUpPanel, setActive);
+    }
+
+    public void SetLargeImage(List<Sprite> librarySprite)
+    {
+        foreach (Sprite sprite in librarySprite)
+        {
+            GameObject largeImage = Instantiate(largeImagePrefab, new Vector3(0, 0, 0), Quaternion.identity);
+            largeImage.GetComponent<Image>().sprite = sprite;
+            largeImage.transform.SetParent(largeImageParent);
+            largeImage.transform.localScale = new Vector3(1f, 1f, 1f);
+        }
+    }
+
+    public void DestroyLargeImage()
+    {
+        if (largeImageParent.childCount > 0)
+        {
+            for (int i = 0; i < largeImageParent.childCount; i++)
+            {
+                Destroy(largeImageParent.GetChild(i).gameObject);
+            }
+        }
+    }
+
+    public void SetActiveLargeImagePanel(bool setActive)
+    {
+        SetActive(largeImagePanel, setActive);
+        scrollRect.horizontalNormalizedPosition = 0f;
     }
 
     public void SetTitleText(string inputString)
@@ -57,175 +85,210 @@ public class MapUIController : MonoBehaviour
         switch (inputDaerah)
         {
             case DAERAH.ACEH:
-                SetImage(detailDaerahImage, librarySpriteDaerah[0]);
-                SetImage(logoDaerahImage, libraryLogoDaerah[0]);
+                SetImage(detailDaerahImage, libraryProvinsiSprite[0].GetFirstImage());
+                SetImage(logoDaerahImage, libraryProvinsiSprite[0].GetLogo());
+                SetLargeImage(libraryProvinsiSprite[0].librarySprite);
                 break;
 
             case DAERAH.SUMATERA_UTARA:
-                SetImage(detailDaerahImage, librarySpriteDaerah[1]);
-                SetImage(logoDaerahImage, libraryLogoDaerah[1]);
+                SetImage(detailDaerahImage, libraryProvinsiSprite[1].GetFirstImage());
+                SetImage(logoDaerahImage, libraryProvinsiSprite[1].GetLogo());
+                SetLargeImage(libraryProvinsiSprite[1].librarySprite);
                 break;
 
             case DAERAH.SUMATERA_BARAT:
-                SetImage(detailDaerahImage, librarySpriteDaerah[2]);
-                SetImage(logoDaerahImage, libraryLogoDaerah[2]);
+                SetImage(detailDaerahImage, libraryProvinsiSprite[2].GetFirstImage());
+                SetImage(logoDaerahImage, libraryProvinsiSprite[2].GetLogo());
+                SetLargeImage(libraryProvinsiSprite[2].librarySprite);
                 break;
 
             case DAERAH.RIAU:
-                SetImage(detailDaerahImage, librarySpriteDaerah[3]);
-                SetImage(logoDaerahImage, libraryLogoDaerah[3]);
+                SetImage(detailDaerahImage, libraryProvinsiSprite[3].GetFirstImage());
+                SetImage(logoDaerahImage, libraryProvinsiSprite[3].GetLogo());
+                SetLargeImage(libraryProvinsiSprite[3].librarySprite);
                 break;
 
             case DAERAH.KEPULAUAN_RIAU:
-                SetImage(detailDaerahImage, librarySpriteDaerah[4]);
-                SetImage(logoDaerahImage, libraryLogoDaerah[4]);
+                SetImage(detailDaerahImage, libraryProvinsiSprite[4].GetFirstImage());
+                SetImage(logoDaerahImage, libraryProvinsiSprite[4].GetLogo());
+                SetLargeImage(libraryProvinsiSprite[4].librarySprite);
                 break;
 
             case DAERAH.JAMBI:
-                SetImage(detailDaerahImage, librarySpriteDaerah[5]);
-                SetImage(logoDaerahImage, libraryLogoDaerah[5]);
+                SetImage(detailDaerahImage, libraryProvinsiSprite[5].GetFirstImage());
+                SetImage(logoDaerahImage, libraryProvinsiSprite[5].GetLogo());
+                SetLargeImage(libraryProvinsiSprite[5].librarySprite);
                 break;
 
             case DAERAH.BENGKULU:
-                SetImage(detailDaerahImage, librarySpriteDaerah[6]);
-                SetImage(logoDaerahImage, libraryLogoDaerah[6]);
+                SetImage(detailDaerahImage, libraryProvinsiSprite[6].GetFirstImage());
+                SetImage(logoDaerahImage, libraryProvinsiSprite[6].GetLogo());
+                SetLargeImage(libraryProvinsiSprite[6].librarySprite);
                 break;
 
             case DAERAH.SUMATERA_SELATAN:
-                SetImage(detailDaerahImage, librarySpriteDaerah[7]);
-                SetImage(logoDaerahImage, libraryLogoDaerah[7]);
+                SetImage(detailDaerahImage, libraryProvinsiSprite[7].GetFirstImage());
+                SetImage(logoDaerahImage, libraryProvinsiSprite[7].GetLogo());
+                SetLargeImage(libraryProvinsiSprite[7].librarySprite);
                 break;
 
             case DAERAH.BANGKA_BELITUNG:
-                SetImage(detailDaerahImage, librarySpriteDaerah[8]);
-                SetImage(logoDaerahImage, libraryLogoDaerah[8]);
+                SetImage(detailDaerahImage, libraryProvinsiSprite[8].GetFirstImage());
+                SetImage(logoDaerahImage, libraryProvinsiSprite[8].GetLogo());
+                SetLargeImage(libraryProvinsiSprite[8].librarySprite);
                 break;
 
             case DAERAH.LAMPUNG:
-                SetImage(detailDaerahImage, librarySpriteDaerah[9]);
-                SetImage(logoDaerahImage, libraryLogoDaerah[9]);
+                SetImage(detailDaerahImage, libraryProvinsiSprite[9].GetFirstImage());
+                SetImage(logoDaerahImage, libraryProvinsiSprite[9].GetLogo());
+                SetLargeImage(libraryProvinsiSprite[9].librarySprite);
                 break;
 
             case DAERAH.BANTEN:
-                SetImage(detailDaerahImage, librarySpriteDaerah[10]);
-                SetImage(logoDaerahImage, libraryLogoDaerah[10]);
+                SetImage(detailDaerahImage, libraryProvinsiSprite[10].GetFirstImage());
+                SetImage(logoDaerahImage, libraryProvinsiSprite[10].GetLogo());
+                SetLargeImage(libraryProvinsiSprite[10].librarySprite);
                 break;
 
             case DAERAH.JAWA_BARAT:
-                SetImage(detailDaerahImage, librarySpriteDaerah[11]);
-                SetImage(logoDaerahImage, libraryLogoDaerah[11]);
+                SetImage(detailDaerahImage, libraryProvinsiSprite[11].GetFirstImage());
+                SetImage(logoDaerahImage, libraryProvinsiSprite[11].GetLogo());
+                SetLargeImage(libraryProvinsiSprite[11].librarySprite);
                 break;
 
             case DAERAH.DKI_JAKARTA:
-                SetImage(detailDaerahImage, librarySpriteDaerah[12]);
-                SetImage(logoDaerahImage, libraryLogoDaerah[12]);
+                SetImage(detailDaerahImage, libraryProvinsiSprite[12].GetFirstImage());
+                SetImage(logoDaerahImage, libraryProvinsiSprite[12].GetLogo());
+                SetLargeImage(libraryProvinsiSprite[12].librarySprite);
                 break;
 
             case DAERAH.JAWA_TENGAH:
-                SetImage(detailDaerahImage, librarySpriteDaerah[13]);
-                SetImage(logoDaerahImage, libraryLogoDaerah[13]);
+                SetImage(detailDaerahImage, libraryProvinsiSprite[13].GetFirstImage());
+                SetImage(logoDaerahImage, libraryProvinsiSprite[13].GetLogo());
+                SetLargeImage(libraryProvinsiSprite[13].librarySprite);
                 break;
 
             case DAERAH.DI_YOGYAKARTA:
-                SetImage(detailDaerahImage, librarySpriteDaerah[14]);
-                SetImage(logoDaerahImage, libraryLogoDaerah[14]);
+                SetImage(detailDaerahImage, libraryProvinsiSprite[14].GetFirstImage());
+                SetImage(logoDaerahImage, libraryProvinsiSprite[14].GetLogo());
+                SetLargeImage(libraryProvinsiSprite[14].librarySprite);
                 break;
 
             case DAERAH.JAWA_TIMUR:
-                SetImage(detailDaerahImage, librarySpriteDaerah[15]);
-                SetImage(logoDaerahImage, libraryLogoDaerah[15]);
+                SetImage(detailDaerahImage, libraryProvinsiSprite[15].GetFirstImage());
+                SetImage(logoDaerahImage, libraryProvinsiSprite[15].GetLogo());
+                SetLargeImage(libraryProvinsiSprite[15].librarySprite);
                 break;
 
             case DAERAH.BALI:
-                SetImage(detailDaerahImage, librarySpriteDaerah[16]);
-                SetImage(logoDaerahImage, libraryLogoDaerah[16]);
+                SetImage(detailDaerahImage, libraryProvinsiSprite[16].GetFirstImage());
+                SetImage(logoDaerahImage, libraryProvinsiSprite[16].GetLogo());
+                SetLargeImage(libraryProvinsiSprite[16].librarySprite);
                 break;
 
             case DAERAH.NTB:
-                SetImage(detailDaerahImage, librarySpriteDaerah[17]);
-                SetImage(logoDaerahImage, libraryLogoDaerah[17]);
+                SetImage(detailDaerahImage, libraryProvinsiSprite[17].GetFirstImage());
+                SetImage(logoDaerahImage, libraryProvinsiSprite[17].GetLogo());
+                SetLargeImage(libraryProvinsiSprite[17].librarySprite);
                 break;
 
             case DAERAH.NTT:
-                SetImage(detailDaerahImage, librarySpriteDaerah[18]);
-                SetImage(logoDaerahImage, libraryLogoDaerah[18]);
+                SetImage(detailDaerahImage, libraryProvinsiSprite[18].GetFirstImage());
+                SetImage(logoDaerahImage, libraryProvinsiSprite[18].GetLogo());
+                SetLargeImage(libraryProvinsiSprite[18].librarySprite);
                 break;
 
             case DAERAH.KALIMANTAN_UTARA:
-                SetImage(detailDaerahImage, librarySpriteDaerah[19]);
-                SetImage(logoDaerahImage, libraryLogoDaerah[19]);
+                SetImage(detailDaerahImage, libraryProvinsiSprite[19].GetFirstImage());
+                SetImage(logoDaerahImage, libraryProvinsiSprite[19].GetLogo());
+                SetLargeImage(libraryProvinsiSprite[19].librarySprite);
                 break;
 
             case DAERAH.KALIMANTAN_BARAT:
-                SetImage(detailDaerahImage, librarySpriteDaerah[20]);
-                SetImage(logoDaerahImage, libraryLogoDaerah[20]);
+                SetImage(detailDaerahImage, libraryProvinsiSprite[20].GetFirstImage());
+                SetImage(logoDaerahImage, libraryProvinsiSprite[20].GetLogo());
+                SetLargeImage(libraryProvinsiSprite[20].librarySprite);
                 break;
 
             case DAERAH.KALIMANTAN_TENGAH:
-                SetImage(detailDaerahImage, librarySpriteDaerah[21]);
-                SetImage(logoDaerahImage, libraryLogoDaerah[21]);
+                SetImage(detailDaerahImage, libraryProvinsiSprite[21].GetFirstImage());
+                SetImage(logoDaerahImage, libraryProvinsiSprite[21].GetLogo());
+                SetLargeImage(libraryProvinsiSprite[21].librarySprite);
                 break;
 
             case DAERAH.KALIMANTAN_SELATAN:
-                SetImage(detailDaerahImage, librarySpriteDaerah[22]);
-                SetImage(logoDaerahImage, libraryLogoDaerah[22]);
+                SetImage(detailDaerahImage, libraryProvinsiSprite[22].GetFirstImage());
+                SetImage(logoDaerahImage, libraryProvinsiSprite[22].GetLogo());
+                SetLargeImage(libraryProvinsiSprite[22].librarySprite);
                 break;
 
             case DAERAH.KALIMANTAN_TIMUR:
-                SetImage(detailDaerahImage, librarySpriteDaerah[23]);
-                SetImage(logoDaerahImage, libraryLogoDaerah[23]);
+                SetImage(detailDaerahImage, libraryProvinsiSprite[23].GetFirstImage());
+                SetImage(logoDaerahImage, libraryProvinsiSprite[23].GetLogo());
+                SetLargeImage(libraryProvinsiSprite[23].librarySprite);
                 break;
 
             case DAERAH.GORONTALO:
-                SetImage(detailDaerahImage, librarySpriteDaerah[24]);
-                SetImage(logoDaerahImage, libraryLogoDaerah[24]);
+                SetImage(detailDaerahImage, libraryProvinsiSprite[24].GetFirstImage());
+                SetImage(logoDaerahImage, libraryProvinsiSprite[24].GetLogo());
+                SetLargeImage(libraryProvinsiSprite[24].librarySprite);
                 break;
 
             case DAERAH.SULAWESI_UTARA:
-                SetImage(detailDaerahImage, librarySpriteDaerah[25]);
-                SetImage(logoDaerahImage, libraryLogoDaerah[25]);
+                SetImage(detailDaerahImage, libraryProvinsiSprite[25].GetFirstImage());
+                SetImage(logoDaerahImage, libraryProvinsiSprite[25].GetLogo());
+                SetLargeImage(libraryProvinsiSprite[25].librarySprite);
                 break;
 
             case DAERAH.SULAWESI_BARAT:
-                SetImage(detailDaerahImage, librarySpriteDaerah[26]);
-                SetImage(logoDaerahImage, libraryLogoDaerah[26]);
+                SetImage(detailDaerahImage, libraryProvinsiSprite[26].GetFirstImage());
+                SetImage(logoDaerahImage, libraryProvinsiSprite[26].GetLogo());
+                SetLargeImage(libraryProvinsiSprite[26].librarySprite);
                 break;
 
             case DAERAH.SULAWESI_TENGAH:
-                SetImage(detailDaerahImage, librarySpriteDaerah[27]);
-                SetImage(logoDaerahImage, libraryLogoDaerah[27]);
+                SetImage(detailDaerahImage, libraryProvinsiSprite[27].GetFirstImage());
+                SetImage(logoDaerahImage, libraryProvinsiSprite[27].GetLogo());
+                SetLargeImage(libraryProvinsiSprite[27].librarySprite);
                 break;
 
             case DAERAH.SULAWESI_SELATAN:
-                SetImage(detailDaerahImage, librarySpriteDaerah[28]);
-                SetImage(logoDaerahImage, libraryLogoDaerah[28]);
+                SetImage(detailDaerahImage, libraryProvinsiSprite[28].GetFirstImage());
+                SetImage(logoDaerahImage, libraryProvinsiSprite[28].GetLogo());
+                SetLargeImage(libraryProvinsiSprite[28].librarySprite);
                 break;
 
             case DAERAH.SULAWESI_TENGGARA:
-                SetImage(detailDaerahImage, librarySpriteDaerah[29]);
-                SetImage(logoDaerahImage, libraryLogoDaerah[29]);
+                SetImage(detailDaerahImage, libraryProvinsiSprite[29].GetFirstImage());
+                SetImage(logoDaerahImage, libraryProvinsiSprite[29].GetLogo());
+                SetLargeImage(libraryProvinsiSprite[29].librarySprite);
                 break;
 
             case DAERAH.MALUKU_UTARA:
-                SetImage(detailDaerahImage, librarySpriteDaerah[30]);
-                SetImage(logoDaerahImage, libraryLogoDaerah[30]);
+                SetImage(detailDaerahImage, libraryProvinsiSprite[30].GetFirstImage());
+                SetImage(logoDaerahImage, libraryProvinsiSprite[30].GetLogo());
+                SetLargeImage(libraryProvinsiSprite[30].librarySprite);
                 break;
 
             case DAERAH.MALUKU:
-                SetImage(detailDaerahImage, librarySpriteDaerah[31]);
-                SetImage(logoDaerahImage, libraryLogoDaerah[31]);
+                SetImage(detailDaerahImage, libraryProvinsiSprite[31].GetFirstImage());
+                SetImage(logoDaerahImage, libraryProvinsiSprite[31].GetLogo());
+                SetLargeImage(libraryProvinsiSprite[31].librarySprite);
                 break;
 
             case DAERAH.PAPUA_BARAT:
-                SetImage(detailDaerahImage, librarySpriteDaerah[32]);
-                SetImage(logoDaerahImage, libraryLogoDaerah[32]);
+                SetImage(detailDaerahImage, libraryProvinsiSprite[32].GetFirstImage());
+                SetImage(logoDaerahImage, libraryProvinsiSprite[32].GetLogo());
+                SetLargeImage(libraryProvinsiSprite[32].librarySprite);
                 break;
 
             case DAERAH.PAPUA:
-                SetImage(detailDaerahImage, librarySpriteDaerah[33]);
-                SetImage(logoDaerahImage, libraryLogoDaerah[33]);
+                SetImage(detailDaerahImage, libraryProvinsiSprite[33].GetFirstImage());
+                SetImage(logoDaerahImage, libraryProvinsiSprite[33].GetLogo());
+                SetLargeImage(libraryProvinsiSprite[33].librarySprite);
                 break;
         }
+
     }
 
     public void SetActiveButtonGroup(ISLAND island, bool setActive)
@@ -264,13 +327,20 @@ public class MapUIController : MonoBehaviour
 
     public void DeactivateAllButtonGroup()
     {
-        SetActiveButtonGroup(ISLAND.JAWA, false);
-        SetActiveButtonGroup(ISLAND.SUMATERA, false);
-        SetActiveButtonGroup(ISLAND.KALIMANTAN, false);
-        SetActiveButtonGroup(ISLAND.SULAWESI, false);
-        SetActiveButtonGroup(ISLAND.NUSATENGGARA, false);
-        SetActiveButtonGroup(ISLAND.MALUKU, false);
-        SetActiveButtonGroup(ISLAND.PAPUA, false);
+        //SetActiveButtonGroup(ISLAND.JAWA, false);
+        //SetActiveButtonGroup(ISLAND.SUMATERA, false);
+        //SetActiveButtonGroup(ISLAND.KALIMANTAN, false);
+        //SetActiveButtonGroup(ISLAND.SULAWESI, false);
+        //SetActiveButtonGroup(ISLAND.NUSATENGGARA, false);
+        //SetActiveButtonGroup(ISLAND.MALUKU, false);
+        //SetActiveButtonGroup(ISLAND.PAPUA, false);
+
+        onBGClicked ();
+    }
+
+    public void ClearDelegateSubscription()
+    {
+        onBGClicked = null;
     }
 
     private void SetImage(Image inputImage, Sprite inputSprite)

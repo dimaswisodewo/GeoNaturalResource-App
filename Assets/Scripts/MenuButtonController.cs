@@ -77,7 +77,6 @@ public class MenuButtonController : MonoBehaviour
 
     public void OnQuitButtonClicked()
     {
-        Debug.Log("Quit Application");
         Application.Quit();
     }
 

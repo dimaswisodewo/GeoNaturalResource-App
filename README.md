@@ -1,1 +1,1 @@
-GeoNaturalResource-App
+GeographyQuiz

@@ -7,7 +7,6 @@ public class JSONData : MonoBehaviour
     public static JSONData instance;
     public List<QuizJSONData> quizData = new List<QuizJSONData>();
     public List<MateriJSONData> materiData = new List<MateriJSONData>();
-    private string outputString = "Belom Diisi";
     private string[] tempArray;
     public QUIZ quizEnum;
 

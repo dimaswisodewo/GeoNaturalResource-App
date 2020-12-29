@@ -10,7 +10,6 @@ public class JsonDownloader : MonoBehaviour
     public HighScoreTable highScoreTable;
     private string quizDataFileName = "QuizData";
     private string materiDataFileName = "MateriData";
-    private string highScoreDataFileName = "HighScoreTable";
 
     public IEnumerator LoadJSONData(string fileName, JSON_TYPE jsonType)
     {

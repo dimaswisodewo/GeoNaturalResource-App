@@ -17,6 +17,11 @@ public class SceneLoader : MonoBehaviour
 
     public void LoadScene(SCENE inputSCENE)
     {
+        if (SceneManager.GetActiveScene().name == Config.SCENE_MAP)
+        {
+            MapUIController.instance.ClearDelegateSubscription();
+        }
+
         sceneToLoad = null;
 
         switch (inputSCENE)
